@@ -1,0 +1,128 @@
+body {
+    background-color: #1f2937;
+    font-family: 'Courier New', Courier, monospace;
+    /*display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 2, 1, auto;*/
+
+  }
+  .header {
+    color: #f9faf8;
+    size: 24px;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+  }
+  .header-right {
+    display: flex;
+    align-items: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 16px;
+  }
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 16px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #f9faf8;
+  }
+  
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  .blurb {
+    size: 48px;
+    font-weight: extra-bold;
+    color: #f9faf8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+}
+  .blurb-left {
+    display: flex;
+    flex-direction: column;
+    align-self: left;
+    align-items: left;
+  }
+  .blurb-right {
+    display: flex;
+    box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
+    border-radius: 50%;
+    width: 48px;
+    height:  48px;
+    align-self: right;
+    flex: 1, 1, auto;
+  }
+
+   .info {
+    background-color: white;
+    font-weight: extra-bold;
+    size: 36px;
+    color: #1f2937;
+   }
+
+   .quote {
+    background-color: #e5e7eb;
+    size: 36px;
+    font-style: italic;
+   }
+
+   .author {
+    font-style: normal;
+   }
+  
+  img {
+    width: 128px;
+    height: 128px;
+  }
+  
+  .title {
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  div.images {
+    /* display: flex; */
+    align-items: center;
+    gap: 52px;
+  }
+
+  div.text {
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .first, .second, .third, .fourth { /*Should have just been one class */
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+  }
+  
+  /* do not edit this footer */
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eee;
+  }
