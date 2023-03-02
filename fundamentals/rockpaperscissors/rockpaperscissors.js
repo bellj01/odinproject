@@ -1,25 +1,5 @@
-/*alert("HI")
-
-
-let add7 = (num) => num + 7;
-//alert(add7(3));
-
-function multiply (a, b) {
-    return a * b;
-}
-//alert(multiply(2,4));
-
-function capitalize (str) {
-    str = str.toLowerCase();
-    firstLetter = str[0].toUpperCase();
-    return firstLetter + str.slice(1);
-}
-//alert(capitalize("BoTH"));
-
-function lastLetter (letter) {
-    return letter.slice(-1);
-}
-alert(lastLetter("abcdz"));*/
+let humanPoints = 0;
+let compPoints = 0;
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
@@ -42,25 +22,42 @@ function getComputerChoice () {
     } else if (number == 2) {
         choice = "scissors";
     }
-    return "rock";
+    return choice;
 }
 
-function playGame (userChoice, computerChoice) {
-    if (userChoice === computerChoice) {
-        alert("It's a draw!");
-    } else if ((userChoice === "rock" && computerChoice === "scissors") ||
+function playRound (userChoice, computerChoice) {
+    pChoice.textContent = userChoice;
+    cChoice.textContent = computerChoice;
+    if ((userChoice === "rock" && computerChoice === "scissors") ||
                 (userChoice === "paper" && computerChoice === "rock") ||
                 (userChoice === "scissors" && computerChoice === "paper")) {
-        alert ("You win!");
+        humanPoints += 1;
+        playerScore.textContent = humanPoints;
         }
        else if ((computerChoice === "rock" && userChoice === "scissors") ||
         (computerChoice === "paper" && userChoice === "rock") ||
         (computerChoice === "scissors" && userChoice === "paper")) {
-        alert ("You lose!");
+            compPoints += 1;
+            computerScore.textContent = compPoints;
+        }
 }
 
-}
+
+const buttons = document.querySelectorAll('button');
+
+buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+        let choice = button.id;
+        playRound(choice, getComputerChoice());
+        
+        if(humanPoints === 5) {
+            alert("You win!");
+        }
+        else if(compPoints === 5) {alert('The computer wins!');}
+
+    })
+}) 
 
 //getUserChoice();
 
-playGame(getUserChoice(), getComputerChoice());
+//playGame(getUserChoice(), getComputerChoice());

@@ -7,7 +7,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>test</title>
+        <title>Rock Paper Scissors</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
@@ -16,7 +16,21 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        
-        <script src="basic.js" async defer></script>
+        <button id="rock">Rock!</button>
+        <button id="paper">Paper!</button>
+        <button id="scissors">Scissors!</button>
+
+        <div id="container">
+            <div id="playerChoice">You chose: </div>
+                <div id="pChoice"></div>
+            <div id="computerChoice">The computer chose: </div>
+                <div id="cChoice"></div>
+            <div id="playerText">Player's Score: </div>
+                <div id="playerScore"></div>
+            <div id="ComputerText">Computer's Score: </div>
+                <div id="computerScore"></div>
+        </div>
+
+        <script src="rockpaperscissors.js" async defer></script>
     </body>
 </html>
