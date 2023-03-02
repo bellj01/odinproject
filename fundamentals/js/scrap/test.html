@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Basic while loop example</title>
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <div>
+
+    </div>
+
+
+    <script>
+        let output = document.querySelector('div');
+        output.innerHTML = '';
+
+        //const para = document.createElement('p');
+        let count = 0;
+        // let i = 10;
+        for (let i = 10; i >= 0; i--) {
+            const para = document.createElement('p');
+            if (i === 10) {
+                para.textContent = `Countdown ${i}`;
+                output.appendChild(para);
+            }
+            else if (i === 0) {
+                para.textContent = `Blast off!`;
+                output.appendChild(para);
+            }
+            else {
+                para.textContent = `${i}`;
+                output.appendChild(para);
+            }
+        }
+        // const para = document.createElement('p');
+        // para.textContent = ;
+        // output.appendChild(para);
+
+
+    </script>
+
+  </body>
+</html>
