@@ -57,7 +57,3 @@ buttons.forEach((button) => {
 
     })
 }) 
-
-//getUserChoice();
-
-//playGame(getUserChoice(), getComputerChoice());
